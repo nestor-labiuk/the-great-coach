@@ -1,14 +1,13 @@
 const express = require('express')
+const coachesRouter = require('./routes/coaches.routes')
+const playersRouter = require('./routes/players.routes')
 
 const app = express()
 
 app.use(express.json())
 
-app.use('/api/coaches', (req, res) => {
-    res.json({ message: 'You got the coaches' })
-})
-app.use('/api/players', (req, res) => {
-    res.json({ message: 'You got the players' })
-})
+app.use('/api/coaches', coachesRouter)
+
+app.use('/api/players', playersRouter)
 
 module.exports = app
