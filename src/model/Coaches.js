@@ -13,7 +13,10 @@ const coachSchema = new Schema({
         type: Number,
         default: 1000000
     },
-    playersList: []
+    playersList: {
+        type: Array,
+        default: []
+    }
 })
 
 const Coach = model('Coach', coachSchema)
