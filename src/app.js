@@ -4,8 +4,11 @@ const app = express()
 
 app.use(express.json())
 
-app.use('/api/test', (req, res) => {
-    res.json({ message: 'Osito alegre' })
+app.use('/api/coaches', (req, res) => {
+    res.json({ message: 'You got the coaches' })
+})
+app.use('/api/players', (req, res) => {
+    res.json({ message: 'You got the players' })
 })
 
 module.exports = app
