@@ -1,3 +1,11 @@
+### GET ALL COACHES - OK -
+GET  http://localhost:3000/api/coaches
+### CREATE PLAYER - OK -
+
+### GET ALL PLAYERS - OK -
+GET http://localhost:3000/api/players
+
+
 ### CREATE COACH - OK -
 POST http://localhost:3000/api/coaches
 Content-Type: application/json 
@@ -7,10 +15,6 @@ Content-Type: application/json
     "lastName": "Perez"
 }
 
-### GET ALL COACHES - OK -
-GET  http://localhost:3000/api/coaches
-
-### CREATE PLAYER - OK -
 POST http://localhost:3000/api/players
 Content-Type: application/json
 
@@ -19,6 +23,3 @@ Content-Type: application/json
     "lastName": "Zancolargo",
     "skillfulFoot": "Right"
 }
-
-### GET ALL PLAYERS - OK -
-GET http://localhost:3000/api/players
