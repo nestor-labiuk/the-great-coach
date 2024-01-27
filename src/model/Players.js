@@ -3,15 +3,15 @@ const { Schema, model } = require('mongoose')
 const playerSchema = new Schema({
     firstName: {
         type: String,
-        required: true,
+        required: true
     },
     lastName: {
         type: String,
-        required: true,
+        required: true
     },
     skillfulFoot: {
         type: String,
-        required: true,
+        required: true
     },
     basePrice: { 
         type: Number,

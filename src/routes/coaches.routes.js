@@ -1,10 +1,7 @@
-const { createCoach } = require('../controllers/coaches.controllers')
-
 const router = require('express').Router()
+const { createCoach, getAllCoaches } = require('../controllers/coaches.controllers')
 
-router.get('/', (req, res) => {
-    res.json({ message: 'You got the coaches' })
-})
+router.get('/', getAllCoaches)
 
 router.post('/', createCoach)
 

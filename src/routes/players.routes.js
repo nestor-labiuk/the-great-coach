@@ -1,11 +1,8 @@
 const router = require('express').Router()
+const { createPlayer, getAllPlayers } = require('../controllers/players.controllers')
 
-router.get('/', (req, res) => {
-    res.json({ message: 'You got the players' })
-})
+router.get('/', getAllPlayers)
 
-router.post('/', (req, res) => {
-    res.json({ message: 'Players created' })
-})
+router.post('/', createPlayer )
 
 module.exports = router
